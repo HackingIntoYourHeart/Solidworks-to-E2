@@ -12,4 +12,4 @@ This is a python script that converts exported Excel BOMs from Solidworks to Exc
 
 ### *RUN ONCE TO RUN INSTALLER*:
 
-It should automatically install all required modules for you on its first run, then it should be usable.
+It should automatically install all required modules for you on its first run; Then it should be usable.
