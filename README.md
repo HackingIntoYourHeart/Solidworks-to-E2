@@ -8,4 +8,8 @@ This is a python script that converts exported Excel BOMs from Solidworks to Exc
 
 ### Usage:
 
-```main.py <Path to Excel BOM from Solidworks>```
+• ```main.py <Path to Excel BOM from Solidworks>```
+
+### *RUN ONCE TO RUN INSTALLER*:
+
+It should automatically install all required modules for you on its first run, then it should be usable.
