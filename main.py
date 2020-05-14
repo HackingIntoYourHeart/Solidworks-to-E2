@@ -70,15 +70,16 @@ if True:
 	inputName = (resource.split("\\")[-1]).split(".")[0]
 	
 	############################################################################
-	print "Converting OLD xls to NEW xlsx..."
-	excel = win32.gencache.EnsureDispatch('Excel.Application')
-	wbold = excel.Workbooks.Open(resource)
+	if resource[-1] != "x":
+		print "Converting OLD xls to NEW xlsx..."
+		excel = win32.gencache.EnsureDispatch('Excel.Application')
+		wbold = excel.Workbooks.Open(resource)
 
-	wbold.SaveAs(resource+"x", FileFormat = 51)    #FileFormat = 51 is for .xlsx extension
-	wbold.Close()                               #FileFormat = 56 is for .xls extension
-	excel.Application.Quit()
-	resource = resource + "x"
-	print "Conversion COMPLETE!"
+		wbold.SaveAs(resource+"x", FileFormat = 51)    #FileFormat = 51 is for .xlsx extension
+		wbold.Close()                               #FileFormat = 56 is for .xls extension
+		excel.Application.Quit()
+		resource = resource + "x"
+		print "Conversion COMPLETE!"
 	############################################################################
 	
 	resource2 = os.path.dirname(os.path.realpath(__file__)) + "\\rc\\rcBOM.xlsx"
