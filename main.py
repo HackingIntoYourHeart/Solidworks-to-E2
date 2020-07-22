@@ -44,18 +44,6 @@ if True:
 					print("FAILED to install pywin32... Closing...")
 					raw_input()
 					exit()
-	
-	'''# Link to Purchased Parts List
-	url = "https://docs.google.com/spreadsheets/d/1LDks7CnArKcV16PDp6z0H9TYSjw9-oFKdrTu169V0NE/export?format=xlsx"
-	# Name of list file
-	# It can be literally anything you want
-	filename = "tmp.xlsx"
-	print("Updating Inventory...")
-	try:
-		urllib.urlretrieve (url, filename)
-		print("Inventory List updated.")
-	except:
-		print("Failed to update list. Using most recent buffer...")'''
 
 	from openpyxl import Workbook
 	from openpyxl import load_workbook
